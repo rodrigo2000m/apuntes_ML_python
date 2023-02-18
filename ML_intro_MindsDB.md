@@ -93,16 +93,18 @@ En general se utilizan para problemas de aprendizaje supervisado.
 Cada conexión entre nodos es gobernada por la fuerza ($w_{i,j}$)
 
 $i$ indica el parámetro (un término independiente y un parámetro por cada variable de entrada) y $j$ se refiere a la neurona $h_{j}$
+
 $$
 g_{1}(x)=w_{0,1}+w_{1,1}x_{1}+w_{2,1}x_{2}+w_{3,1}x_{3}+w_{4,1}x_{4}
 $$
+
 $g_{1}(x)$ se denomina combinación lineal de nodos de la capa.
 Vamos a tener una expresión análoga para $g_{2}(x)$ y $g_{3}(x)$. Con la red entrenada vamos a poder calcular cada uno de esos valores los cuales van a ser reales en principio.
 
 Hidden units
-$$
+$
 h_{1}(x)=f_{1}(g_1(x))
-$$
+$
 Donde $f_{1}(x)$ es la función de activación. Le asigna un "peso a una señal".
 
 <img src="img/funcion_activacion.png">
