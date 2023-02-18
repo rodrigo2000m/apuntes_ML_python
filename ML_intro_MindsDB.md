@@ -41,25 +41,35 @@ Entrenamiento - Validación - Testeo (del modelo)
 $$
 y_{pred}=w_{1}x+w_{0}
 $$
+
 Función de coste (MSE):
+
 $$
 f(w,w_{0})=\frac{1}{N}\sum_{i=1}^{N}(y_{i}-y_{i,pred})^2
 $$
+
 Regla de actualización:
+
 $$
 Update Rule =minJ(w_{0}, w_{1})
 $$
+
 ### Regresión logística (clasificación)
+
 $$
 p(suceso)=\frac{exp(w_{0}+w_{1}x_{1})}{1+exp(w_{0}+w_{1}x_{1})}
 $$
+
 Función de coste y regla de actualización
+
 $$
 J(w, w_{0})=-\frac{1}{N}\sum_{i=1}^{N}y_{i}log(p_{suceso})+(1-y_{i})log(1-p_{suceso})
 $$
+
 $$
 Update Rule =minJ(w_{0}, w_{1})
 $$
+
 Problemas de rendimiento de la regresión logística (matriz de confusión):
 |  |Positivo   |Negativo|
 |--|-----------|--------|
@@ -73,9 +83,11 @@ $$
 ## Algoritmos no supervisados
 ### Clustering
 K-means: función de coste
+
 $$
 J(c^1,..,c^K)=\sum_{j=1}^{K}\sum_{x \epsilon S_{j}}||x_{i}^{j}-c^{j}||^2
 $$
+
 K-means: rendimiento
 Inertia: que tan cerca están los puntos al centroide. Debe ser pequeño.
 
@@ -102,9 +114,11 @@ $g_{1}(x)$ se denomina combinación lineal de nodos de la capa.
 Vamos a tener una expresión análoga para $g_{2}(x)$ y $g_{3}(x)$. Con la red entrenada vamos a poder calcular cada uno de esos valores los cuales van a ser reales en principio.
 
 Hidden units
-$
+
+$$
 h_{1}(x)=f_{1}(g_1(x))
-$
+$$
+
 Donde $f_{1}(x)$ es la función de activación. Le asigna un "peso a una señal".
 
 <img src="img/funcion_activacion.png">
